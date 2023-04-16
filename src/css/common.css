@@ -24,9 +24,6 @@ button {
 }
 
 /*Task-3*/
-.img-item{
-  width: 320px;
-}
 
 ul.gallery {
   display: flex;
@@ -35,4 +32,8 @@ ul.gallery {
 
 ul.gallery > li {
 list-style: none;
+}
+
+img {
+  width: 320px;
 }

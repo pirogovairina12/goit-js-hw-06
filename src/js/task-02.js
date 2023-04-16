@@ -6,20 +6,17 @@ const ingredients = [
     'Herbs',
     'Condiments',
 ];
+const ingredientsHTML = document.querySelector("ul#ingredients");
 
-ingredients.forEach(el => {
+
+const liElements = ingredients.map(elem => {
     const liEl = document.createElement("li");
-
-    liEl.textContent = el
-
+    liEl.textContent = elem;
     liEl.classList.add("item");
 
-    const ingredientsHTML = document.querySelector("ul#ingredients")
-    ingredientsHTML.append(liEl);
-
-    // console.log(liEl);
+    return liEl
 })
-
+ingredientsHTML.append(...liElements);
 
 
 

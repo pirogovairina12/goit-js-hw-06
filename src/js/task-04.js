@@ -9,13 +9,12 @@ const incrementBtn = document.querySelector('button[data-action="increment"]');
 let total = 0;
 
 decrementBtn.addEventListener('click', decreasingValue);
+incrementBtn.addEventListener('click', increasingValue);
 
 function decreasingValue() {
     total -=1;
     counterValue.innerHTML = total;
 }
-
-incrementBtn.addEventListener('click', increasingValue);
 
 function increasingValue() {
     total +=1;

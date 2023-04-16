@@ -3,8 +3,8 @@ const loginForm = document.querySelector(".login-form");
 loginForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const emailInput = loginForm.elements.email;
-    const passwordInput = loginForm.elements.password;
+    const emailInput = document.querySelector('input[name="email"]');
+    const passwordInput = document.querySelector('input[name="password"]');
 
     if (emailInput.value === "" || passwordInput.value === "") {
         alert("Все поля должны быть заполнены");

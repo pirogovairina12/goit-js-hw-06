@@ -7,11 +7,14 @@ function getRandomHexColor() {
 
 const btn = document.querySelector('.change-color');
 const text = document.querySelector('.color');
+let color;
 
 btn.addEventListener('click', backgroundColor);
 
 
-function backgroundColor(event) {
-    document.body.style.backgroundColor = getRandomHexColor()
-    text.innerHTML = getRandomHexColor()
+function backgroundColor() {
+    color = getRandomHexColor();
+    document.body.style.backgroundColor = color
+    text.textContent = color
 }
+
